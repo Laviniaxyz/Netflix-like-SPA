@@ -1,0 +1,35 @@
+.movie-row {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.poster {
+  margin: 3px;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.poster:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  direction: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20;
+  text-align: center;
+}
